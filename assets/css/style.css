@@ -367,7 +367,19 @@ html {
 body {
     background-color: #181818;
     line-height: 1.5;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: system-ui,
+ -apple-system,
+ "Segoe UI",
+ Roboto,
+ "Helvetica Neue",
+ Arial,
+ "Noto Sans",
+ "Liberation Sans",
+ sans-serif,
+ "Apple Color Emoji",
+ "Segoe UI Emoji",
+ "Segoe UI Symbol",
+ "Noto Color Emoji";
     font-size: 1.4rem;
     color: #fff;
 }
@@ -1253,7 +1265,6 @@ a:hover {
 .post__data {
     display: -ms-flexbox;
     display: flex;
-    color: #828282;
     line-height: 1.2rem;
 }
 
@@ -1275,7 +1286,7 @@ a:hover {
 
 .post__read {
     font-size: 1.4rem;
-    color: #107EFF;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -1714,9 +1725,13 @@ a:hover {
     opacity: .5;
     top: 2rem;
     right: 2rem;
-    transition: opacity .2s linear, -webkit-transform .2s linear;
-    transition: transform .2s linear, opacity .2s linear;
-    transition: transform .2s linear, opacity .2s linear, -webkit-transform .2s linear;
+    transition: opacity .2s linear,
+ -webkit-transform .2s linear;
+    transition: transform .2s linear,
+ opacity .2s linear;
+    transition: transform .2s linear,
+ opacity .2s linear,
+ -webkit-transform .2s linear;
 }
 
 .modal__close:hover {

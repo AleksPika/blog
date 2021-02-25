@@ -330,7 +330,19 @@ html {
 body {
   background-color: #181818;
   line-height: 1.5;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui,
+ -apple-system,
+ "Segoe UI",
+ Roboto,
+ "Helvetica Neue",
+ Arial,
+ "Noto Sans",
+ "Liberation Sans",
+ sans-serif,
+ "Apple Color Emoji",
+ "Segoe UI Emoji",
+ "Segoe UI Symbol",
+ "Noto Color Emoji";
   font-size: 1.4rem;
   color: #fff; }
   body.no-scroll {
@@ -961,7 +973,6 @@ a {
 
 .post__data {
   display: flex;
-  color: #828282;
   line-height: 1.2rem; }
   .post__data a {
     color: inherit; }
@@ -983,7 +994,7 @@ a {
 
 .post__read {
   font-size: 1.4rem;
-  color: #107EFF;
+  color: #fff;
   text-decoration: none; }
   .post__read:hover {
     text-decoration: underline; }
@@ -1329,7 +1340,8 @@ a {
   border-radius: .5rem;
   opacity: 0;
   transform: translateY(-50px);
-  transition: transform .2s linear, opacity .2s linear; }
+  transition: transform .2s linear,
+ opacity .2s linear; }
   @media screen and (max-width: 991px) {
     .modal__content {
       padding: 5rem 3rem 3rem; } }
@@ -1348,7 +1360,8 @@ a {
   opacity: .5;
   top: 2rem;
   right: 2rem;
-  transition: transform .2s linear, opacity .2s linear; }
+  transition: transform .2s linear,
+ opacity .2s linear; }
   .modal__close:hover {
     transform: rotate(90deg);
     opacity: 1; }
