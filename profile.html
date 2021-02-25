@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="page">
+    <div class="page" id="page">
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
@@ -44,7 +44,7 @@
                     </ul>
                 </nav>
         
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="sidebarToggle">
                     <span>Открыть</span>
                 </button>
             </div>
@@ -65,7 +65,7 @@
                 </form>
             </div>
         </header>
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
         
             <div class="sidebar__header">
                 <img src="./assets/images/sidebar-header.jpg" alt="sidebar-header">
@@ -138,7 +138,7 @@
         
             <div class="sidebar__footer">
                 <a class="btn btn--red" href="works.html">Мои работы</a>
-                <button class="btn btn--blue" type="button">Написать мне</button>
+                <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
             </div>
         </aside>
         <main class="main">
@@ -188,9 +188,80 @@
         </main>
     </div>
 
-    <div class="modal">
-        <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+        </div>
+    </div>    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--contact">
+    
+            <button class="modal__close" type="button">
+                <img src="./assets/images/close.svg" alt="Закрыть">
+            </button>
+    
+            <form action="/" class="form" method="post">
+    
+                <div class="form__group form__group--md">
+                    <input class="form__control" type="text" placeholder="Ваше имя">
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <input class="form__control" type="email" placeholder="Ваше e-mail">
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea" placeholder="Текст сообщения"></textarea>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                    </div>
+                </div>
+    
+            </form>
+    
+            <ul class="modal__footer">
+                <li>e-mail: <a href="mailto:info@mysite.com.ua">info@mysite.com.ua</a></li>
+                <li>тел: <a href="tel:+380991111111">+38(099)-111-11-11</a></li>
+            </ul>
+    
+        </div>
+    </div>    <div class="modal" id="share-modal">
+        <div class="modal__content">
+    
+            <button class="modal__close" type="button">
+                <img src="./assets/images/close.svg" alt="Закрыть">
+            </button>
+    
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link" href="#!">
+                        <img src="./assets/images/share/twitter-share.svg" alt="twitter-share">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#!">
+                        <img src="./assets/images/share/facebook-share.svg" alt="facebook">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#!">
+                        <img src="./assets/images/share/pinterest-share.svg" alt="pinterest">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link" href="#!">
+                        <img src="./assets/images/share/copy.svg" alt="copy">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
     <script src="assets/js/app.js"></script>
 </body>
 
